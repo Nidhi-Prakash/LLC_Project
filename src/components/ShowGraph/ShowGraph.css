@@ -1,0 +1,24 @@
+.showGraph__main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.showGraph__show {
+    height: 80vh;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showGraph__buttons {
+    display: flex;
+    column-gap: 50px;
+}

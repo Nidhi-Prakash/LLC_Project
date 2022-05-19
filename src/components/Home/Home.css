@@ -1,0 +1,25 @@
+.home__container {
+    height: 100vh;
+    width: 100%;
+}
+
+.home__left {
+    height: inherit;
+    background-color: #f4f5f7;
+    text-align: center;
+}
+
+.home__left img {
+    
+}
+
+.home__left h3, p{
+    width: 300px;
+    margin: 0 auto;
+    padding: 3px 0;
+}
+
+.home__right {
+    box-sizing: border-box;
+    padding: 0 100px 0 70px;
+}
