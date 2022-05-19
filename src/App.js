@@ -11,10 +11,7 @@ function App() {
     setIsUserHaveAccount((sessionStorage.getItem('userInfo')) === null ? false : true);
   }, [])
 
-
-  useEffect(() => {
-  }, []);
-
+  
   return (
     <div className="App">
       {isUserHaveAccount ? <ShowGraph /> : <Home setIsUserHaveAccount={setIsUserHaveAccount} />}

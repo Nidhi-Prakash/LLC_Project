@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 
+
 const FormComponent = ({ setIsUserHaveAccount }) => {
 
     const [userInfo, setUserInfo] = useState({
@@ -32,7 +33,7 @@ const FormComponent = ({ setIsUserHaveAccount }) => {
             setValidation((prevValidation) => { return { ...prevValidation, validFullName: false } });
         }
 
-        if (email.includes('@') && email.substring(email.indexOf('.') + 1).length >= 2) {
+        if (email.includes('@') && email.includes('.') && email.substring(email.indexOf('.') + 1).length >= 2) {
             setValidation((prevValidation) => { return { ...prevValidation, validEmail: true } });
         } else {
             setValidation((prevValidation) => { return { ...prevValidation, validEmail: false } });
@@ -64,7 +65,7 @@ const FormComponent = ({ setIsUserHaveAccount }) => {
     }
 
     const handleChange = (event) => {
-        const value = (event.target.value).trim();
+        const value = (event.target.value);
         const name = event.target.name;
         setUserInfo((prevInfo) => {
             return { ...prevInfo, [name]: value }
@@ -136,6 +137,7 @@ const FormComponent = ({ setIsUserHaveAccount }) => {
                     <Form.Control className='p-2' name='phoneNumber' onChange={(event) => handleChange(event)} value={userInfo.phoneNumber} />
                     {!validation.validPhoneNumber && clickOnSubmit && <p className='text-danger m-0'>Invalid Phone Number!</p>}
                 </Form.Group>
+
                 <Form.Group className="mb-3" id="formGridCheckbox">
                     <Form.Check
                         type="checkbox"
