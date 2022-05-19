@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/LLC_Project/static/css/main.0e95feee.css",
+    "main.js": "/LLC_Project/static/js/main.9f0d1761.js",
+    "static/media/BKG.jpg": "/LLC_Project/static/media/BKG.febab44c1c7d035be4fb.jpg",
+    "index.html": "/LLC_Project/index.html",
+    "main.0e95feee.css.map": "/LLC_Project/static/css/main.0e95feee.css.map",
+    "main.9f0d1761.js.map": "/LLC_Project/static/js/main.9f0d1761.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e95feee.css",
+    "static/js/main.9f0d1761.js"
+  ]
+}
