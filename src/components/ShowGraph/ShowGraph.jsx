@@ -34,7 +34,7 @@ const ShowGraph = () => {
 
             <h2 className='text-dark text-center'>Graphs with React</h2>
             <BarChart width={700} height={500} data={data} />
-            <button className= 'mt-5 btn2' onClick={changeData}>Change Data</button>
+            <button className='mt-5 btn2' onClick={changeData}>Change Data</button>
 
         </Container>
     )
